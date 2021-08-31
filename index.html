@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <section class="features-icons bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box-title border w-80 p-10">
+                        <div>
+                            <span class="title">Personal Information</span>
+                        </div>
+                        <table border="1">
+                            <tr>
+                                <td>First Name</td>
+                                <td><input id="first_name" type="text"></td>
+                                <td>Gender</td>
+                                <td colspan="3"><input type="radio" id="female" name="gender">Female<input type="radio" id="male" name="gender">Male</td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td><input id="last_name" type="text"></td>
+                                <td>Nationality</td>
+                                <td>
+                                    <select name="" id="canadian">
+                                        <option value="canadian">canadian</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td colspan="3"><textarea name="" id="address" cols="30" rows="5"></textarea></td>
+                            </tr>
+                        </table>    
+                    </div>
+                    <div class="box-title border w-80 p-10">
+                        <div>
+                            <span class="title">Medical History</span>
+                        </div>
+                        <input type="checkbox" id="Smallpox" name="Smallpox" value="Smallpox">
+                        <label for="Smallpox">Smallpox</label>
+                        <input type="checkbox" id="Mumps" name="Mumps" value="Mumps">
+                        <label for="Mumps">Mumps</label>
+                        <input type="checkbox" id="Dizziness" name="Dizziness" value="Dizziness">
+                        <label for="Dizziness">Dizziness</label>
+                        <input type="checkbox" id="Sneezing" name="Sneezing" value="Sneezing">
+                        <label for="Sneezing">Sneezing</label>
+                    </div>
+                    <div class="box-title border p-10">
+                        <div>
+                            <span class="title">Current Medication</span>
+                        </div>
+                        <div>
+                            <span>Are you currently taking any medication?</span><input type="radio" id="check_yes" name="radio1" value="yes">Yes<input type="radio" id="check_no" name="radio1" value="no">No
+                        </div>
+                        <div>
+                            <span>If you are currently taking medication, please indicate it in the space below.</span>
+                        </div>
+                        <div>
+                            <textarea name="" id="currentMedicationAddress" cols="100" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button onclick="submitFrom();" id="btn-submit" class="submit">Submit</button>
+                        <button onclick="resetFrom()" id="btn-reset" class="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+</html>
